@@ -13,6 +13,7 @@
 		B61006402547A9BD00E39E65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B610063E2547A9BD00E39E65 /* Main.storyboard */; };
 		B61006422547A9BE00E39E65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B61006412547A9BE00E39E65 /* Assets.xcassets */; };
 		B61006452547A9BE00E39E65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B61006432547A9BE00E39E65 /* LaunchScreen.storyboard */; };
+		B61006522547AD6C00E39E65 /* GroceryShopping.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B61006512547AD6C00E39E65 /* GroceryShopping.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B61006412547A9BE00E39E65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B61006442547A9BE00E39E65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B61006462547A9BE00E39E65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B61006512547AD6C00E39E65 /* GroceryShopping.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GroceryShopping.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				B61006412547A9BE00E39E65 /* Assets.xcassets */,
 				B61006432547A9BE00E39E65 /* LaunchScreen.storyboard */,
 				B61006462547A9BE00E39E65 /* Info.plist */,
+				B61006512547AD6C00E39E65 /* GroceryShopping.jpg */,
 			);
 			path = AbdelrahmanTealab_MidTerm;
 			sourceTree = "<group>";
@@ -125,6 +128,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B61006452547A9BE00E39E65 /* LaunchScreen.storyboard in Resources */,
+				B61006522547AD6C00E39E65 /* GroceryShopping.jpg in Resources */,
 				B61006422547A9BE00E39E65 /* Assets.xcassets in Resources */,
 				B61006402547A9BD00E39E65 /* Main.storyboard in Resources */,
 			);
