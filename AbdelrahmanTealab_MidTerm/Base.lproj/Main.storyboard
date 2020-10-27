@@ -296,6 +296,12 @@
                         <outlet property="quantityLabel3" destination="sOW-CB-kee" id="c3C-yZ-sXa"/>
                         <outlet property="quantityLabel4" destination="Nln-7U-mih" id="GrN-zV-DAZ"/>
                         <outlet property="quantityLabel5" destination="LkX-C7-u2B" id="b0K-Vv-25o"/>
+                        <outlet property="stepperOutlet0" destination="bC3-7p-FUj" id="4fU-O4-4SI"/>
+                        <outlet property="stepperOutlet1" destination="gGN-qh-TjV" id="oty-Z0-t5j"/>
+                        <outlet property="stepperOutlet2" destination="ZDQ-QE-FSg" id="id6-Kn-00f"/>
+                        <outlet property="stepperOutlet3" destination="CQI-QM-7lO" id="Cxk-b9-Gdl"/>
+                        <outlet property="stepperOutlet4" destination="UYO-Jk-Bu7" id="KjW-VW-xly"/>
+                        <outlet property="stepperOutlet5" destination="Lp0-jv-aVD" id="SBR-oG-0fn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
