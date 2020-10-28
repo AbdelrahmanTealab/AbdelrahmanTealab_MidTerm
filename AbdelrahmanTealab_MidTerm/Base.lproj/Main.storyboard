@@ -317,7 +317,7 @@
     <resources>
         <image name="bg" width="1200" height="1200"/>
         <namedColor name="bg color">
-            <color red="0.97585701897463517" green="1" blue="0.9827558992396952" alpha="0.51436680711610483" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.97600001096725464" green="1" blue="0.98299998044967651" alpha="0.51399999856948853" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>

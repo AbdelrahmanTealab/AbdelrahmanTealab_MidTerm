@@ -52,6 +52,8 @@ class ViewController: UIViewController {
     var labelsDict = [Int:UILabel]()
     var steppersDict = [Int:UIStepper]()
     
+    var listsDict = [String:ListData]() //for saving the data
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         /*----------------------------------------------
@@ -124,8 +126,43 @@ class ViewController: UIViewController {
     
     @IBAction func savePressed(_ sender: UIButton) {
         /*----------------------------------------------
-         For future.
+         when save is pressed, the values of the above
+         dictionaries will be saved as strings in a new
+         dictionary to be saved for the data structure
+         ListData to be previewed later.
          ----------------------------------------------*/
+        let listname = listName.text ?? listName.placeholder
+        
+        var textsString = [Int:String]()
+        for texts in textsDict {
+            textsString[texts.key] = String(texts.value.text ?? "")
+        }
+        
+        var labelsString = [Int:String]()
+        for labels in labelsDict {
+            labelsString[labels.key] = String(labels.value.text ?? "0")
+        }
+        
+        var steppersInt = [Int:Int]()
+        for stepper in steppersDict {
+            steppersInt[stepper.key] = Int(stepper.value.value)
+        }
+        /*----------------------------------------------
+         now i initialize the object from the above dicts
+         and then save this object later in an array
+         and preview them.
+         ----------------------------------------------*/
+        
+        let myList = ListData(listname: listname, textsData: textsString, labelsData: labelsString, steppersData: steppersInt)
+        
+        let userdefaults = UserDefaults.standard
+        userdefaults.set(myList, forKey: "myList")
+        userdefaults.synchronize()
+    }
+    
+    @IBAction func favoritesPressed(_ sender: UIButton)
+    {
+        
     }
 }
 
