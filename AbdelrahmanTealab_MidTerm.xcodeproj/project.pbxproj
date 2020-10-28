@@ -11,9 +11,9 @@
 		B610063B2547A9BD00E39E65 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B610063A2547A9BD00E39E65 /* SceneDelegate.swift */; };
 		B610063D2547A9BD00E39E65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B610063C2547A9BD00E39E65 /* ViewController.swift */; };
 		B61006402547A9BD00E39E65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B610063E2547A9BD00E39E65 /* Main.storyboard */; };
-		B61006422547A9BE00E39E65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B61006412547A9BE00E39E65 /* Assets.xcassets */; };
 		B61006452547A9BE00E39E65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B61006432547A9BE00E39E65 /* LaunchScreen.storyboard */; };
 		B61006522547AD6C00E39E65 /* GroceryShopping.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B61006512547AD6C00E39E65 /* GroceryShopping.jpg */; };
+		B63A99542548ED330060E1DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B63A99532548ED330060E1DF /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +22,10 @@
 		B610063A2547A9BD00E39E65 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B610063C2547A9BD00E39E65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B610063F2547A9BD00E39E65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B61006412547A9BE00E39E65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B61006442547A9BE00E39E65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B61006462547A9BE00E39E65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B61006512547AD6C00E39E65 /* GroceryShopping.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GroceryShopping.jpg; sourceTree = "<group>"; };
+		B63A99532548ED330060E1DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +62,7 @@
 				B610063A2547A9BD00E39E65 /* SceneDelegate.swift */,
 				B610063C2547A9BD00E39E65 /* ViewController.swift */,
 				B610063E2547A9BD00E39E65 /* Main.storyboard */,
-				B61006412547A9BE00E39E65 /* Assets.xcassets */,
+				B63A99532548ED330060E1DF /* Assets.xcassets */,
 				B61006432547A9BE00E39E65 /* LaunchScreen.storyboard */,
 				B61006462547A9BE00E39E65 /* Info.plist */,
 				B61006512547AD6C00E39E65 /* GroceryShopping.jpg */,
@@ -129,7 +129,7 @@
 			files = (
 				B61006452547A9BE00E39E65 /* LaunchScreen.storyboard in Resources */,
 				B61006522547AD6C00E39E65 /* GroceryShopping.jpg in Resources */,
-				B61006422547A9BE00E39E65 /* Assets.xcassets in Resources */,
+				B63A99542548ED330060E1DF /* Assets.xcassets in Resources */,
 				B61006402547A9BD00E39E65 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
