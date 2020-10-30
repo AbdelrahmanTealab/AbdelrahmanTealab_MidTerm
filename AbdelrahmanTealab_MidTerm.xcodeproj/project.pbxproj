@@ -14,7 +14,7 @@
 		B61006452547A9BE00E39E65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B61006432547A9BE00E39E65 /* LaunchScreen.storyboard */; };
 		B61006522547AD6C00E39E65 /* GroceryShopping.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B61006512547AD6C00E39E65 /* GroceryShopping.jpg */; };
 		B63A99542548ED330060E1DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B63A99532548ED330060E1DF /* Assets.xcassets */; };
-		B6591B6C254A0E4C00317213 /* ListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6591B6B254A0E4C00317213 /* ListData.swift */; };
+		B6520368254BD76C002E0DA5 /* DisplayingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6520367254BD76C002E0DA5 /* DisplayingListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		B61006462547A9BE00E39E65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B61006512547AD6C00E39E65 /* GroceryShopping.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GroceryShopping.jpg; sourceTree = "<group>"; };
 		B63A99532548ED330060E1DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B6591B6B254A0E4C00317213 /* ListData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListData.swift; sourceTree = "<group>"; };
+		B6520367254BD76C002E0DA5 /* DisplayingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayingListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +44,6 @@
 		B610062C2547A9BD00E39E65 = {
 			isa = PBXGroup;
 			children = (
-				B6591B6B254A0E4C00317213 /* ListData.swift */,
 				B61006372547A9BD00E39E65 /* AbdelrahmanTealab_MidTerm */,
 				B61006362547A9BD00E39E65 /* Products */,
 			);
@@ -69,6 +68,7 @@
 				B61006432547A9BE00E39E65 /* LaunchScreen.storyboard */,
 				B61006462547A9BE00E39E65 /* Info.plist */,
 				B61006512547AD6C00E39E65 /* GroceryShopping.jpg */,
+				B6520367254BD76C002E0DA5 /* DisplayingListViewController.swift */,
 			);
 			path = AbdelrahmanTealab_MidTerm;
 			sourceTree = "<group>";
@@ -144,10 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6520368254BD76C002E0DA5 /* DisplayingListViewController.swift in Sources */,
 				B610063D2547A9BD00E39E65 /* ViewController.swift in Sources */,
 				B61006392547A9BD00E39E65 /* AppDelegate.swift in Sources */,
 				B610063B2547A9BD00E39E65 /* SceneDelegate.swift in Sources */,
-				B6591B6C254A0E4C00317213 /* ListData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -51,9 +51,7 @@ class ViewController: UIViewController {
     var textsDict = [Int:UITextField]()
     var labelsDict = [Int:UILabel]()
     var steppersDict = [Int:UIStepper]()
-    
-    var listsDict = [String:ListData]() //for saving the data
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         /*----------------------------------------------
@@ -128,41 +126,44 @@ class ViewController: UIViewController {
         /*----------------------------------------------
          when save is pressed, the values of the above
          dictionaries will be saved as strings in a new
-         dictionary to be saved for the data structure
-         ListData to be previewed later.
+         unified dictionary to be saved for preview later
          ----------------------------------------------*/
         let listname = listName.text ?? listName.placeholder
         
-        var textsString = [Int:String]()
-        for texts in textsDict {
-            textsString[texts.key] = String(texts.value.text ?? "")
+        var myList = [String:[String:String]]()
+        // Get the url of Persons.json in document directory
+        guard let documents = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else { return }
+        let file = documents.appendingPathComponent("lists.json")
+        
+        //retrieve existing array to append myList to it
+        do {
+            let data = try Data(contentsOf: file, options: [])
+            guard let theList = try JSONSerialization.jsonObject(with: data, options: []) as? [String:[String:String]]
+            else {
+                print("fail2")
+                return
+            }
+            myList = theList
+        } catch {
+            print(error)
         }
-        
-        var labelsString = [Int:String]()
-        for labels in labelsDict {
-            labelsString[labels.key] = String(labels.value.text ?? "0")
+        var myItems = [String:String]()
+        for i in 0...5 {
+            let v = labelsDict[i]?.text ?? "0"
+            let k = textsDict[i]?.text ?? ""
+            myItems[k] = v
         }
+        myList[listname ?? "Shopping List"]=myItems
+        print(myList)
         
-        var steppersInt = [Int:Int]()
-        for stepper in steppersDict {
-            steppersInt[stepper.key] = Int(stepper.value.value)
+        
+        // Transform array into data and save it into file
+        do {
+            let data = try JSONSerialization.data(withJSONObject: myList, options: [])
+            try data.write(to: file, options: [])
+        } catch {
+            print(error)
         }
-        /*----------------------------------------------
-         now i initialize the object from the above dicts
-         and then save this object later in an array
-         and preview them.
-         ----------------------------------------------*/
-        
-        let myList = ListData(listname: listname, textsData: textsString, labelsData: labelsString, steppersData: steppersInt)
-        
-        let userdefaults = UserDefaults.standard
-        userdefaults.set(myList, forKey: "myList")
-        userdefaults.synchronize()
-    }
-    
-    @IBAction func favoritesPressed(_ sender: UIButton)
-    {
-        
     }
 }
 
