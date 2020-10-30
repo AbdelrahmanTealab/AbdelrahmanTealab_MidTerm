@@ -333,33 +333,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="eNy-9J-jhp">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="eNy-9J-jhp">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CbY-w5-x28">
-                                <rect key="frame" x="20" y="10" width="374" height="798"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CbY-w5-x28">
+                                <rect key="frame" x="20" y="10" width="374" height="747"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6YP-HK-6SM">
+                                <rect key="frame" x="174.5" y="765" width="65" height="37"/>
+                                <color key="backgroundColor" red="0.48934417959999998" green="0.70730268959999998" blue="0.83531552549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="20"/>
+                                <state key="normal" title="Delete">
+                                    <color key="titleColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="deletePressed:" destination="k68-vz-QOE" eventType="touchUpInside" id="DBe-T6-tmg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NOu-xp-QCu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="eNy-9J-jhp" firstAttribute="leading" secondItem="517-jK-NRo" secondAttribute="leading" id="DPy-ED-LeF"/>
-                            <constraint firstItem="NOu-xp-QCu" firstAttribute="bottom" secondItem="CbY-w5-x28" secondAttribute="bottom" id="L3m-n5-upS"/>
-                            <constraint firstItem="CbY-w5-x28" firstAttribute="centerX" secondItem="eNy-9J-jhp" secondAttribute="centerX" id="Qwa-xm-sJ1"/>
+                            <constraint firstItem="6YP-HK-6SM" firstAttribute="top" secondItem="CbY-w5-x28" secondAttribute="bottom" constant="8" symbolic="YES" id="CKK-3C-2Wv"/>
+                            <constraint firstItem="6YP-HK-6SM" firstAttribute="centerX" secondItem="517-jK-NRo" secondAttribute="centerX" id="Fz2-bO-hbi"/>
+                            <constraint firstItem="NOu-xp-QCu" firstAttribute="bottom" secondItem="6YP-HK-6SM" secondAttribute="bottom" constant="6" id="Yvo-O4-1EY"/>
                             <constraint firstItem="NOu-xp-QCu" firstAttribute="trailing" secondItem="CbY-w5-x28" secondAttribute="trailing" constant="20" id="by9-ub-fus"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="eNy-9J-jhp" secondAttribute="bottom" constant="-88" id="hDf-Yv-qHr"/>
                             <constraint firstItem="CbY-w5-x28" firstAttribute="top" secondItem="NOu-xp-QCu" secondAttribute="top" constant="10" id="ibG-cd-ndv"/>
-                            <constraint firstItem="eNy-9J-jhp" firstAttribute="top" secondItem="NOu-xp-QCu" secondAttribute="top" id="ne8-XJ-fXX"/>
                             <constraint firstItem="CbY-w5-x28" firstAttribute="leading" secondItem="NOu-xp-QCu" secondAttribute="leading" constant="20" id="uSY-qb-Qab"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="textView" destination="CbY-w5-x28" id="g58-ee-Eiy"/>
+                        <outlet property="textView" destination="CbY-w5-x28" id="d0F-no-voX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Jy-Hb-0aw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

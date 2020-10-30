@@ -47,4 +47,16 @@ class DisplayingListViewController: UIViewController {
         }
         
     }
+    @IBAction func deletePressed(_ sender: UIButton) {
+        let emptyList = [String:[String:String]]()
+        guard let documents = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else { return }
+        let file = documents.appendingPathComponent("lists.json")
+        do {
+            let data = try JSONSerialization.data(withJSONObject: emptyList, options: [])
+            try data.write(to: file, options: [])
+        } catch {
+            print(error)
+        }
+    }
+    
 }
